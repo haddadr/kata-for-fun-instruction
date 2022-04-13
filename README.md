@@ -4,7 +4,7 @@ Les logiciels suivants doivent être installés sur votre machine :
 
 - [Node.js](https://nodejs.org/) et npm (au minimum node v 10.x et npm 5.x).
 - Maven 3
-- Java 8
+- Java 8.
 
 ### Instructions :
 

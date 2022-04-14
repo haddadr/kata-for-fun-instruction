@@ -3,3 +3,5 @@ kataforfun-back/*.iml
 kataforfun-back/target
 kataforfun-ui/node_modules
 kataforfun-ui/.idea
+
+.idea/

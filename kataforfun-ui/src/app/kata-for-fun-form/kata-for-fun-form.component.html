@@ -1,3 +1,7 @@
-<div class="container"> 
-    To Be Completed
+<div class="container">
+  <form [formGroup]="inputForm" (ngSubmit)="submitNumber()">
+    <label for="input">Number to convert</label>
+    <input type="number" class="form-control" id="input" formControlName="input" placeholder="inputNumber">
+    <button class="btn btn-primary" type="submit" [disabled]="inputForm.invalid">Convert</button>
+  </form>
 </div>

@@ -8,6 +8,8 @@ import { KataForFunService } from '../kata-for-fun.service';
 })
 export class KataForFunComponent implements OnInit, OnDestroy {
 
+  convertedValues: NumberConverted[] = [];
+
   constructor(private kataForFunService: KataForFunService) { }
 
   ngOnInit(): void {
@@ -17,6 +19,10 @@ export class KataForFunComponent implements OnInit, OnDestroy {
   }
 
   convertNumber(inputNumber: number): void {
+    this.kataForFunService.convert(inputNumber).subscribe(({result}) => {
+      this.convertedValues.push({numberToConvert: inputNumber, result});
+      console.log(result);
+    });
   }
 
 }

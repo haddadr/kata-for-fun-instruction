@@ -7,7 +7,10 @@ import { ItemWithPath } from '../model/nav-item';
 })
 export class NavBarComponent implements OnInit {
 
-  navItems: ItemWithPath[] = [{text: 'Accueil', path: 'home'}];
+  navItems: ItemWithPath[] = [
+    {text: 'Accueil', path: 'home'},
+    {text: 'Kata For Fun', path: 'kata'}
+  ];
 
   constructor() { }
 
